@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "rick-and-morty-watch-i50046.jpeg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
