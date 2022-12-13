@@ -14,7 +14,7 @@ class CharactersViewController: UIViewController {
     
     //MARK: Properties
     
-    
+    var presenter: CharactersViewToPresenterProtocol?
     
     //MARK: Life cycle
     
@@ -74,6 +74,13 @@ extension CharactersViewController: UICollectionViewDelegate, UICollectionViewDa
 
 extension CharactersViewController: CharactersPresenterToViewProtocol {
     
+    func reloadData() {
+        print("test")
+    }
+    
+    func stopSpinner() {
+        print("test")
+    }
     
     
 }

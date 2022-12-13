@@ -5,40 +5,40 @@
 //  Created by Carlos Soler on 12/12/22.
 //
 
-class CharacetersPresenter: CharactersViewToPresenterProtocol {
+import UIKit
+
+class CharactersPresenter: CharactersViewToPresenterProtocol {
     
     var view: CharactersPresenterToViewProtocol?
     var interactor: CharactersPresenterToInteractorProtocol?
     var router: CharactersPresenterToRouterProtocol?
     
-    var currentGuests: [Guest]?
-    
     func viewDidLoad() {
-        interactor?.viewDidLoad()
+        self.interactor?.viewDidLoad()
     }
     
     func popViewController(withNavitagionController navigationController: UINavigationController) {
-        router?.popViewController(withNavitagionController: navigationController)
+        self.router?.popViewController(withNavitagionController: navigationController)
     }
     
 }
 
-extension InviteGuestsPresenter: CharactersInteractorToPresenterProtocol {
+extension CharactersPresenter: CharactersInteractorToPresenterProtocol {
 
     func reloadData() {
-        view?.reloadData()
+        self.view?.reloadData()
     }
     
     func showAlert(withTitle title: String, description: String, andButtons buttons: [UIAlertAction]) {
-        view?.showAlert(withTitle: title, description: description, andButtons: buttons)
+        self.view?.showAlert(withTitle: title, description: description, andButtons: buttons)
     }
     
     func showSpinner() {
-        view?.showSpinner(withCustomColor: nil)
+        self.view?.showSpinner()
     }
     
     func stopSpinner() {
-        view?.stopSpinner()
+        self.view?.stopSpinner()
     }
     
 }

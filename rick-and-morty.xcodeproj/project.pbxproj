@@ -13,9 +13,15 @@
 		9FD06C322947BB9C00FCA918 /* rick_and_mortyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD06C312947BB9C00FCA918 /* rick_and_mortyUITests.swift */; };
 		9FD06C342947BB9C00FCA918 /* rick_and_mortyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD06C332947BB9C00FCA918 /* rick_and_mortyUITestsLaunchTests.swift */; };
 		9FD06C432947BE7F00FCA918 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FD06C422947BE7F00FCA918 /* LaunchScreen.xib */; };
-		9FD06C472947BEF300FCA918 /* CharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD06C452947BEF300FCA918 /* CharactersViewController.swift */; };
 		9FD06C4A2947C16F00FCA918 /* CharactersView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FD06C492947C16F00FCA918 /* CharactersView.xib */; };
 		9FD06C4C2947C41200FCA918 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD06C4B2947C41200FCA918 /* SceneDelegate.swift */; };
+		9FD06C952947CBBF00FCA918 /* CharactersRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD06C892947CBBF00FCA918 /* CharactersRouter.swift */; };
+		9FD06C972947CBBF00FCA918 /* CharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD06C8C2947CBBF00FCA918 /* CharactersViewController.swift */; };
+		9FD06C982947CBBF00FCA918 /* CharacetersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD06C8E2947CBBF00FCA918 /* CharacetersPresenter.swift */; };
+		9FD06C9A2947CBBF00FCA918 /* CharactersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD06C922947CBBF00FCA918 /* CharactersInteractor.swift */; };
+		9FD06C9B2947CBBF00FCA918 /* CharacetersProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD06C942947CBBF00FCA918 /* CharacetersProtocols.swift */; };
+		9FD06C9E2947CE8B00FCA918 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9FD06C9D2947CE8B00FCA918 /* Alamofire */; };
+		9FEF87AE294910BC00CA6B92 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEF87AD294910BC00CA6B92 /* String+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,9 +52,14 @@
 		9FD06C312947BB9C00FCA918 /* rick_and_mortyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rick_and_mortyUITests.swift; sourceTree = "<group>"; };
 		9FD06C332947BB9C00FCA918 /* rick_and_mortyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rick_and_mortyUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9FD06C422947BE7F00FCA918 /* LaunchScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
-		9FD06C452947BEF300FCA918 /* CharactersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewController.swift; sourceTree = "<group>"; };
 		9FD06C492947C16F00FCA918 /* CharactersView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharactersView.xib; sourceTree = "<group>"; };
 		9FD06C4B2947C41200FCA918 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9FD06C892947CBBF00FCA918 /* CharactersRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersRouter.swift; sourceTree = "<group>"; };
+		9FD06C8C2947CBBF00FCA918 /* CharactersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersViewController.swift; sourceTree = "<group>"; };
+		9FD06C8E2947CBBF00FCA918 /* CharacetersPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacetersPresenter.swift; sourceTree = "<group>"; };
+		9FD06C922947CBBF00FCA918 /* CharactersInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersInteractor.swift; sourceTree = "<group>"; };
+		9FD06C942947CBBF00FCA918 /* CharacetersProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacetersProtocols.swift; sourceTree = "<group>"; };
+		9FEF87AD294910BC00CA6B92 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FD06C9E2947CE8B00FCA918 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +111,7 @@
 		9FD06C0F2947BB9B00FCA918 /* rick-and-morty */ = {
 			isa = PBXGroup;
 			children = (
+				9FD06C9F2947CF8F00FCA918 /* Extensions */,
 				9FD06C442947BEC100FCA918 /* Modules */,
 				9FD06C102947BB9B00FCA918 /* AppDelegate.swift */,
 				9FD06C4B2947C41200FCA918 /* SceneDelegate.swift */,
@@ -129,10 +142,78 @@
 		9FD06C442947BEC100FCA918 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				9FD06C452947BEF300FCA918 /* CharactersViewController.swift */,
-				9FD06C492947C16F00FCA918 /* CharactersView.xib */,
+				9FD06C812947CA8000FCA918 /* Characters */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		9FD06C812947CA8000FCA918 /* Characters */ = {
+			isa = PBXGroup;
+			children = (
+				9FD06C8F2947CBBF00FCA918 /* Entity */,
+				9FD06C912947CBBF00FCA918 /* Interactor */,
+				9FD06C8D2947CBBF00FCA918 /* Presenter */,
+				9FD06C932947CBBF00FCA918 /* Protocols */,
+				9FD06C882947CBBF00FCA918 /* Router */,
+				9FD06C8A2947CBBF00FCA918 /* View */,
+			);
+			path = Characters;
+			sourceTree = "<group>";
+		};
+		9FD06C882947CBBF00FCA918 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				9FD06C892947CBBF00FCA918 /* CharactersRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		9FD06C8A2947CBBF00FCA918 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9FD06C492947C16F00FCA918 /* CharactersView.xib */,
+				9FD06C8C2947CBBF00FCA918 /* CharactersViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9FD06C8D2947CBBF00FCA918 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				9FD06C8E2947CBBF00FCA918 /* CharacetersPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		9FD06C8F2947CBBF00FCA918 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		9FD06C912947CBBF00FCA918 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				9FD06C922947CBBF00FCA918 /* CharactersInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		9FD06C932947CBBF00FCA918 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9FD06C942947CBBF00FCA918 /* CharacetersProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		9FD06C9F2947CF8F00FCA918 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9FEF87AD294910BC00CA6B92 /* String+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +232,9 @@
 			dependencies = (
 			);
 			name = "rick-and-morty";
+			packageProductDependencies = (
+				9FD06C9D2947CE8B00FCA918 /* Alamofire */,
+			);
 			productName = "rick-and-morty";
 			productReference = 9FD06C0D2947BB9B00FCA918 /* rick-and-morty.app */;
 			productType = "com.apple.product-type.application";
@@ -223,6 +307,9 @@
 				Base,
 			);
 			mainGroup = 9FD06C042947BB9B00FCA918;
+			packageReferences = (
+				9FD06C9C2947CE8B00FCA918 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 9FD06C0E2947BB9B00FCA918 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -266,9 +353,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FD06C472947BEF300FCA918 /* CharactersViewController.swift in Sources */,
+				9FEF87AE294910BC00CA6B92 /* String+Extension.swift in Sources */,
 				9FD06C112947BB9B00FCA918 /* AppDelegate.swift in Sources */,
+				9FD06C952947CBBF00FCA918 /* CharactersRouter.swift in Sources */,
+				9FD06C9B2947CBBF00FCA918 /* CharacetersProtocols.swift in Sources */,
 				9FD06C4C2947C41200FCA918 /* SceneDelegate.swift in Sources */,
+				9FD06C9A2947CBBF00FCA918 /* CharactersInteractor.swift in Sources */,
+				9FD06C982947CBBF00FCA918 /* CharacetersPresenter.swift in Sources */,
+				9FD06C972947CBBF00FCA918 /* CharactersViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -595,6 +687,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9FD06C9C2947CE8B00FCA918 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9FD06C9D2947CE8B00FCA918 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9FD06C9C2947CE8B00FCA918 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9FD06C052947BB9B00FCA918 /* Project object */;
 }

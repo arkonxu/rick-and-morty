@@ -5,10 +5,12 @@
 //  Created by Carlos Soler on 12/12/22.
 //
 
+import UIKit
+
 
 class CharactersRouter {
     
-    @objc func createModule() -> CharactersViewController {
+    func createModule() -> CharactersViewController {
         let view = CharactersViewController(nibName: "CharactersView", bundle: nil)
         var presenter: CharactersViewToPresenterProtocol & CharactersInteractorToPresenterProtocol = CharactersPresenter()
         var interactor: CharactersPresenterToInteractorProtocol = CharactersInteractor()
